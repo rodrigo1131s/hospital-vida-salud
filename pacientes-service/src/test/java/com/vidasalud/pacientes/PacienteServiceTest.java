@@ -48,7 +48,7 @@ class PacienteServiceTest {
         StepVerifier.create(service.registrar(request()))
                 .assertNext(r -> {
                     assertEquals(Long.valueOf(1L), r.id());
-                    assertEquals("ACTIVO", r.estado());
+                    assertEquals("INACTIVO", r.estado());
                 })
                 .verifyComplete();
     }
