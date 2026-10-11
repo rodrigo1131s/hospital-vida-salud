@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: auditoria-service
+  r2dbc:
+    url: r2dbc:h2:mem:///auditoria_test;DB_CLOSE_DELAY=-1
+  rabbitmq:
+    listener:
+      simple:
+        auto-startup: false
+  cloud:
+    discovery:
+      enabled: false
+
+eureka:
+  client:
+    enabled: false

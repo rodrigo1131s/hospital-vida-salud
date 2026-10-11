@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: notificaciones-service
+  r2dbc:
+    url: r2dbc:h2:mem:///notificaciones_test;DB_CLOSE_DELAY=-1
+  rabbitmq:
+    listener:
+      simple:
+        auto-startup: false
+  cloud:
+    discovery:
+      enabled: false
+
+eureka:
+  client:
+    enabled: false
